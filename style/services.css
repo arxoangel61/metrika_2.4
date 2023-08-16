@@ -1,0 +1,165 @@
+/* Секрия  services */
+
+.services {
+  padding-top: 150px;
+  background-color: #121212;
+  background-size: contain;
+}
+
+.services__title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 3px;
+  margin-bottom: 31px;
+}
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px 10px;
+
+}
+
+.services__item {
+  width: calc(50% - 5px);
+  height: 100%;
+}
+
+.services__page {
+  max-height: 388px;
+  height: 100%;
+  
+}
+.services__text {
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-left: 4px;
+}
+
+.text-padding {
+  margin-bottom: 0;
+}
+
+.services__btn {
+  margin-top: 109px;
+  margin-bottom: 150px;
+}
+.services__btn {
+  background-color: #AD1818;
+  color: #fff;
+  border: none;
+}
+.services__btn:hover {
+  background-color: #fff;
+  color: #AD1818;
+}
+
+.services__item::before {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #AD1818;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 8px 22px;
+  top: 35px;
+  left: 28px;
+}
+
+.services__item::after {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #AD1818;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 8px 22px;
+  top: 35px;
+  left: 28px;
+}
+
+.img__plan, .img__drawing, .img__color, .img__stock{
+  position: relative;
+}
+.img__plan::before {
+  position: absolute;
+  content: "от 2500₽/м²";
+}
+.img__color::before {
+  position: absolute;
+  content: "от 3000₽/м²";
+}
+.img__drawing::after {
+  position: absolute;
+  content: "от 30 000₽/мес";
+}
+.img__stock::after {
+  content: "5% от стоимости";
+  position: absolute;
+}
+
+
+/* размерешение в браузере для проверки pixel 959 */
+@media (max-width: 1199px) { 
+ .services__text {
+  margin-top: 16px;
+  margin-left: 1px;
+ 
+ }
+ .services__item::before{
+  font-size: 20px;
+  padding: 9px 28px;
+  top: 36px;
+  left: 30px;
+}
+.services__item::after {
+  font-size: 20px;
+  padding: 8px 28px;
+  top: 37px;
+  left: 30px;
+}
+
+}
+
+
+/* размерешение в браузере для проверки pixel 376 */
+@media (max-width: 600px) {
+  .services__items { 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 56px 0;
+  }
+  .services__item {
+    width: 100%;
+    height: 100%;
+  }
+  .services__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .services{
+    padding-top: 80px;
+  }
+  .services__item::before{
+    font-size: 14px;
+    left: 22px;
+    top: 23px;
+  }
+
+  .services__item::after {
+    font-size: 14px;
+    left: 24px;
+    top: 25px;
+  }
+
+
+   .services__text {
+    margin-top: 10px;
+  }
+
+  .services > .container-inline {
+    padding-left: 13px;
+  }
+
+
+}

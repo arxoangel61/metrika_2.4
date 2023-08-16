@@ -1,0 +1,46 @@
+.header {
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.header__logo {
+  cursor: pointer;
+}
+.header__list {
+  display: flex;
+}
+
+.header__list li {
+  margin-right: 61px;
+}
+
+.header__list li:last-child {
+  margin-right: 0;
+}
+
+.header__item {
+  text-decoration: none;
+
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  transition: 1s;
+  color: #121212;
+}
+
+.header__item:hover{
+  opacity: 0.5;
+  border-bottom: 1px solid gray;
+  transition: 1s;
+}
+
+
+@media (max-width: 375px) { 
+  .header__logo {
+    width: 96px;
+  }
+}

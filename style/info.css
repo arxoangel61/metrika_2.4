@@ -1,0 +1,162 @@
+ /* секция info  */
+
+ .info {
+  padding-top: 150px;
+}
+.info__item {
+  position: relative;
+}
+
+.info__item h2{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.info__phone{
+  margin-top: 30px;
+  position: relative;
+}
+
+.info__phone a, .info__mail a{
+  text-decoration: none;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: #121212;
+ 
+}
+
+.info__mail p {
+  margin-top: 30px;
+}
+
+.info__mail a{
+  max-width: 413px;
+ 
+}
+
+.info__mail {
+  position: relative;
+  margin-top: -10px;
+}
+
+.info__сontact {
+  margin-top: 44px;
+  display: flex;
+  padding-bottom: 150px;
+  gap: 0 120px;
+}
+
+.info__mail a:hover, .info__phone a:hover{
+  opacity: 0.5;
+  border-bottom: 3px solid gray;
+  
+}
+
+.info__phone::before{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../ic_outline-phone-iphone.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  top: -52px;
+  left: -2px;
+}
+
+
+.info__mail::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../resources/material-symbols_mail-outline-rounded.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  top: -11px;
+  left: -1px;
+}
+
+
+@media (max-width: 1199px) {  
+
+  .info {
+    padding-top: 120px;
+  }
+
+
+  .info__phone a, .info__mail a{
+    font-size: 45px;
+    letter-spacing: -1.35px;
+  }
+
+  .info__сontact {  
+    padding-bottom: 120px;
+    gap: 0 130px;
+  }
+
+  .info__item h2 {
+    margin-left: 3px;
+  }
+
+  .info > .container-inline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 860px) {  
+  .info { 
+    padding-top: 77px;
+  }
+
+
+  .info__сontact { 
+    flex-direction: column;
+    gap: 24px 0px;
+    padding-bottom: 71px;
+  }
+
+  .info__item h2 {
+    font-size: 14px;
+    padding-left: 2px;
+  }
+
+  .info__mail a, .info__phone a{
+    font-size: 35px;
+  }
+
+  .info__phone::before, .info__mail::before{ 
+    width: 18px;
+    height: 18px;
+  }
+
+  .info__phone::before {
+    top:-31px
+  }
+
+  .info__mail::before {
+    top: -2px;
+    left: 0px;
+  }
+
+
+  .info__phone  {
+    margin-top: 5px;
+  }
+
+  .info > .container-inline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}

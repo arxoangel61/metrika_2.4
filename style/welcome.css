@@ -1,0 +1,111 @@
+/* main */
+/* Секрия  welcome */
+
+.welcome {
+  padding-top: 70px;
+}
+.welcome__title {
+  font-size: 60px;
+  line-height: 60px;
+  max-width: 956px;
+  width: 100%;
+  margin-left: 3px;
+}
+
+.welcome__text {
+  position: absolute;
+  bottom: 41px;
+  left: 40px;
+  max-width: 430px;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #FFFFFF;
+}
+.welcome__page{
+  margin-top: 34px;
+  position: relative;
+  min-height: 500px;
+  height: 100%;
+
+  background-image: url(../welcome.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+@media (max-width: 1199px) {
+  .container-inline{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .welcome__title {
+    max-width: 810px;
+    width: 100%;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -1.5px;
+  }
+  .welcome__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .welcome__text {
+    bottom: 33px;
+    left: 42px;
+  }
+
+  .welcome__page{
+    position: relative;
+    min-height: 400px;
+    height: 100%;
+  
+    background-image: url(../welcome.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .container-inline{
+    max-width: 100%;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .welcome__title {
+    font-size: 30px;
+    line-height: 32px;
+    max-width: 330px;
+    letter-spacing: -0.9px;
+    
+  }
+  .welcome__text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 312px;
+  }
+  .welcome__text {
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+  
+  }
+
+  .welcome__page{
+    margin-top: 25px;
+    position: relative;
+    min-height: 304px;
+    height: 100%;
+  
+    background-image: url(../welcome-mobile.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}

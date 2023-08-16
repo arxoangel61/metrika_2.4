@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/Projects/module-1/1/reset.css">
+</head>
+<style>
+
+.body_fixe {
+  overflow: hidden;
+}
+
+
+
+.header__nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.header__logo {
+  cursor: pointer;
+}
+.header__list {
+  display: flex;
+}
+
+.header__list li {
+  margin-right: 61px;
+}
+
+.header__list li:last-child {
+  margin-right: 0;
+}
+
+.header__item {
+  text-decoration: none;
+
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  transition: 1s;
+  color: #121212;
+}
+
+.header__item:hover{
+  opacity: 0.5;
+  border-bottom: 1px solid gray;
+  transition: 1s;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.container-inline{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  position: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: end;
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__content {
+  width: 80%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .container-inline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header__nav > nav {
+    display: none;
+  }
+
+  .burger-btn {
+    position: absolute;
+    right: 40px;
+    z-index: 100;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+  }
+
+  .burger {
+  position: fixed;
+  }
+
+  .burger-btn_open {
+    background-color: blue;
+  }
+  .burger__nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .burger__item {
+    display: block;
+    padding: 10px;
+    font-size: 32px;
+  }
+
+  .body_fixed > .header > .header__nav > .header__logo {
+    display: none;
+  }
+  
+}
+
+
+
+</style>
+<body>
+  <header class="header">   
+    <div class="container-inline header__nav">
+      <div class="header__logo">
+        <img src="../Метрика.jpg" alt="Логотип">
+      </div>
+      <nav>
+        <ol class="header__list">
+          <li><a class="header__item nav--link" href="#about">О НАС</a></li>
+          <li><a class="header__item nav--link" href="#projects">ПРОЕКТЫ</a></li>
+          <li><a class="header__item nav--link" href="#services">УСЛУГИ</a></li>
+          <li><a class="header__item nav--link" href="#info">КОНТАКТЫ</a></li>
+        </ol>
+      </nav>
+      <div class="js-burger-btn burger-btn"></div>
+    </div>
+
+    <div class="js-burger burger">
+      <div class="js-burger__content burger__content">
+        <div class="burger__logo">
+          <img src="../Метрика.jpg" alt="Логотип">
+        </div>
+        <nav>
+          <ol class="burger__nav">
+            <li><a class="burger__item nav--link" href="#about">О НАС</a></li>
+            <li><a class="burger__item nav--link" href="#projects">ПРОЕКТЫ</a></li>
+            <li><a class="burger__item nav--link" href="#services">УСЛУГИ</a></li>
+            <li><a class="burger__item nav--link" href="#info">КОНТАКТЫ</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+
+  </header>
+
+
+  <script src="../burger.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap'); */
+
+/* font-family: 'Manrope', sans-serif; 400*/ 
+
+@import "style/header.css";
+@import "style/welcome.css";
+@import "style/about.css";
+@import "style/projects.css";
+@import "style/services.css";
+@import "style/room.css";
+@import "style/info.css";
+@import "style/footer.css";
+@import "style/reviews.css";
+@import "style/popup.css";
+@import "style/burger.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  font-family: 'Manrope', sans-serif; 
+  /* background: #F5F5F5; */
+  width: 100%;
+}
+
+
+h1, h2, h3, h4, p, a, div {
+  letter-spacing: -0.03em;
+}
+
+h1, h2, h3, h4, p, a, li {
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 30px;
+  line-height: 41px;
+}
+
+section {
+  
+}
+
+.none {
+  display: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.section {
+}
+
+.container-inline{
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.container--black {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+}
+.btn {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 41px;
+  padding: 54px 0;
+  width: 100%;
+  text-align: center;
+  transition: 1s;
+  border-radius: 5px;
+  font-family: 'Manrope', sans-serif;
+}
+.btn :hover {
+  transition: 1s;
+}
+
+  
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .services__btn {
+    margin-top: 80px;
+    margin-bottom: 125px;
+  }
+  .projects__btn {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+}
+
+
+@media (max-width: 500px) { 
+  h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .btn {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 34px 0;
+  }
+  .btn {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}
